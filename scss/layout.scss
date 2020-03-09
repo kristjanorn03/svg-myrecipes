@@ -1,0 +1,33 @@
+// grid columns
+
+//Ipad//
+@media screen and (min-width:37.5em) {
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+}
+// fartölvur //
+@media screen and (min-width:60em) {
+    .container {
+        max-width: 60em;
+        margin: 0 auto;
+    }
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        justify-content: center;
+    }
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+}

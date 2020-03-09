@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+    {% block content %}
+<main class="col-2">
+    <article>
+    <h1>{{post.title}}</h1>
+    <p>
+        <small>{{post.date}}</small>
+        {{post.content}}
+    </p>
+    </article>
+    <aside>
+        <img src="../{{ post.thumbnail }}">
+    </aside>
+</main>
+{% endblock %}

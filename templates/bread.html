@@ -1,0 +1,38 @@
+{% extends "frontpage.html" %}
+
+{% block content %}
+
+<div class="col-3">
+
+{% for post in posts %}
+
+    <main class="card stretch">
+
+        <article>
+            <header>
+                <img src="{{ post.thumbnail }}">
+            </header>
+            <footer>
+                <h2>{{ post.title }}</h2>
+                <small>{{ post.date }}</small>
+                <p>
+                    {{ post.summary}}
+                </p>
+                <a class="button" href="posts/{{ post.slug }}.html">Recipe</a>
+                <br>
+                {% set list_of_tags = post.tags.split(",") %}
+                {% for tag in list_of_tags %}
+                    <button class="shyButton mybutton">{{ tag }}</button>
+                {% endfor %}
+            </footer>
+            
+        </article>
+
+    </main>
+
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

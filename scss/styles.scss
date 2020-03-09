@@ -1,0 +1,64 @@
+ 
+$font: 'Merriweather', serif ;
+$fontcolor: rgb(0, 128, 128);
+$bgcolor: rgb(233, 44, 44);
+body {
+    background-color: $bgcolor;
+    font-family: $font;
+}
+h1, h2, h3 {
+    color: $fontcolor;
+}
+
+.img {
+    max-width:100%;
+    height:auto;
+}
+.mybutton {
+    background: #f7786b;
+    font-size: 0.75em;
+    text-decoration: none;
+    padding: .2em, .5em;
+}
+.card {
+    background-color: white;
+    border-radius: .4em;
+    padding: 2em;
+}
+.stretch {
+    display: grid;
+    justify-self: stretch;
+}
+.button {
+    background: #f77;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: .5em;
+    padding: .2em, .5em;
+    color: black;
+    display: block;
+    margin: .3em;
+    width: 5em;
+    text-align: center;
+}
+.button:hover {
+    background-color: #037496;
+}
+.image {
+    max-width: 20%;
+    height:auto;
+}
+.HeimasidaLinkur {
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    border-radius: .5em;
+    background-color: #f77;
+    margin: auto;
+    padding: .2em .2em;
+}
+.HeimasidaLinkur:hover {
+    background-color: #037496;
+}
+// ná í layout síðuna
+@import 'layout'; 
