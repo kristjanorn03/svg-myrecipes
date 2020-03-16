@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?om5ezd');
+  src:  url('../fonts/icomoon.eot?om5ezd#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?om5ezd') format('truetype'),
+    url('../fonts/icomoon.woff?om5ezd') format('woff'),
+    url('../fonts/icomoon.svg?om5ezd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-pencil2:before {
+  content: "\e906";
+}
+.icon-eyedropper:before {
+  content: "\e90a";
+}
+.icon-paint-format:before {
+  content: "\e90c";
+}
+.icon-alarm:before {
+  content: "\e950";
+}
+.icon-tv:before {
+  content: "\e95b";
+}
+.icon-fire:before {
+  content: "\e9a9";
+}
+.icon-earth:before {
+  content: "\e9ca";
+}
+.icon-man:before {
+  content: "\e9dc";
+}
+.icon-grin:before {
+  content: "\e9e9";
+}
+.icon-baffled:before {
+  content: "\e9f3";
+}
+.icon-point-right:before {
+  content: "\ea04";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-enter:before {
+  content: "\ea13";
+}
+.icon-volume-high:before {
+  content: "\ea26";
+}
+.icon-tux:before {
+  content: "\eabd";
+}
+
+.icon-bubbles,
+.icon-github,
+.icon-facebook,
+.icon-soundcloud2 {
+  color: #fff;
+  font-size: 1.3em;
+}
