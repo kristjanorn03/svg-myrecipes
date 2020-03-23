@@ -1,19 +1,25 @@
  
 $font: 'Merriweather', serif ;
 $fontcolor: rgb(0, 128, 128);
-$bgcolor: rgb(233, 44, 44);
+$bgcolor: rgb(177, 199, 166);
 body {
     background-color: $bgcolor;
     font-family: $font;
 }
 h1, h2, h3 {
     color: $fontcolor;
+} 
+.imgs {
+    max-width: 100%;
+    height: auto;
 }
-
+div .imgs {
+    display: block;
+}
 .img {
     max-width:100%;
     height:auto;
-}
+} 
 .mybutton {
     background: #f7786b;
     font-size: 0.75em;
@@ -45,7 +51,7 @@ h1, h2, h3 {
     background-color: #037496;
 }
 .image {
-    max-width: 20%;
+    max-width: 100%;
     height:auto;
 }
 .HeimasidaLinkur {
@@ -60,5 +66,27 @@ h1, h2, h3 {
 .HeimasidaLinkur:hover {
     background-color: #037496;
 }
-// ná í layout síðuna
-@import "layout","socialButts","iconfonts" ; 
+.anotherButton {
+    text-decoration: none;
+    padding: .2em .5em .2em .5em;
+    color: black;
+    display: block;
+    margin: .3em;
+    width: 7em;
+    text-align: center;
+} 
+.anotherButton:hover {
+    background-color: lighten($color:red, $amount: 25%);
+}
+.topmenu a {
+    text-decoration-line: none;
+    color: black;
+    font-size: larger;
+    text-align: center;
+}
+.topnav {
+    padding-top: 1em;
+}  
+
+// ná í stílsíðuna
+@import "layout","socialButts","iconfonts"; 

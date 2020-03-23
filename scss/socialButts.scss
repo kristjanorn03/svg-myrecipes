@@ -1,0 +1,48 @@
+.sMedia {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    justify-content: space-around;
+}
+.sMedia a {
+    display: block;
+    margin: 0 .5em;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.youtube, .facebook,
+.instagram, .twitter {
+    position: relative;
+    height: 2em;
+    width: 2.5em;
+    padding: .8em 0 0 0;
+    border-radius: 50%;
+    background-color: #f77;
+    transition: width 1s ease;
+}
+.youtube:hover,
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+    background-color:darken(#f77,25%);
+    transition: width 1s ease;
+}
+
+@media screen and (min-width: 60em) {
+    .sMedia {
+        display: block;
+        position: fixed;
+        top: 7em;
+        right: .4em;
+        height: 10em;
+        width: 2.5em;
+    }
+    .sMedia div {
+        width: 2.5em;
+        margin: .2em 0;
+        padding: .6em 0 0 0;
+    }
+}

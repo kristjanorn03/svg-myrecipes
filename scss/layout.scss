@@ -1,23 +1,116 @@
-// grid columns
-
-//Ipad//
-@media screen and (min-width:37.5em) {
-    .col-3 {
+.container {
+    max-width: 80em;
+    margin: 1em auto;
+    justify-items: center;
+}
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+}
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+}
+.headcol-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    align-items: center;
+    margin: 1em 0;
+}
+.topmenu {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    list-style-type: none;
+}
+.auglysing {
+    grid-area: auglysing;
+    border: dotted black 1px;
+    text-align: center;
+    padding: 1em;
+}
+.splashlogo {
+    grid-area: splashlogo;
+}
+.kynning {
+    grid-area: kynning;
+}
+.col-3-1 {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 2em;
+    grid-template-areas:
+        "splashlogo"
+        "kynning" 
+        "auglysing";
+}
+// ipad//
+@media screen and (min-width: 37.5em) {
+    .col-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2em;
     }
-    .col-2 {
+    .col-3 {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2em;
     }
+    .headcol-2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .col-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+        align-items: center;
+        margin: 1em 0;
+    }
+    .topmenu {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        list-style-type: none;
+    }
+    .col-3-1 {
+        display: grid;
+        grid-template-columns: 3.25fr 1fr;
+        grid-gap: 2em;
+        grid-template-areas:
+            "splashlogo auglysing"
+            "kynning auglysing";
+    }
+    .auglysing {
+        grid-area: auglysing;
+        border: dotted black 1px;
+        text-align: center;
+        padding: 1em;
+    }
+    .splashlogo {
+        grid-area: splashlogo;
+    }
+    .kynning {
+        grid-area: kynning;
+    }
 }
-// fartölvur //
-@media screen and (min-width:60em) {
+// fartölvur//
+@media screen and (min-width: 60em) {
     .container {
-        max-width: 60em;
+        max-width: 70em;
         margin: 0 auto;
+    }
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
     }
     .col-3 {
         display: grid;
@@ -25,9 +118,41 @@
         grid-gap: 2em;
         justify-content: center;
     }
-    .col-2 {
+    .headcol-2 {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+    }
+    .col-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+        align-items: center;
+        margin: 1em 0;
+    }
+    .topmenu {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        list-style-type: none;
+    }
+    .col-3-1 {
+        display: grid;
+        grid-template-columns: 3.25fr 1fr;
         grid-gap: 2em;
+        grid-template-areas:
+            "splashlogo auglysing"
+            "kynning auglysing";
+    }
+    .auglysing {
+        grid-area: auglysing;
+        border: dotted black 1px;
+        text-align: center;
+        padding: 1em;
+    }
+    .splashlogo {
+        grid-area: splashlogo;
+    }
+    .kynning {
+        grid-area: kynning;
     }
 }

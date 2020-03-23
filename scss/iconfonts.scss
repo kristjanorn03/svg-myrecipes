@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  /*speak: none;*/
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,60 +24,33 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-home3:before {
+.icon-bread:before {
+  content: "\e904";
+}
+.icon-starters:before {
+  content: "\e901";
+}
+.icon-mainCourse:before {
   content: "\e902";
 }
-.icon-pencil2:before {
-  content: "\e906";
+.icon-desserts:before {
+  content: "\e903";
 }
-.icon-eyedropper:before {
-  content: "\e90a";
+.icon-drinks:before {
+  content: "\e900";
 }
-.icon-paint-format:before {
-  content: "\e90c";
+.icon-play:before {
+  content: "\e912";
 }
-.icon-alarm:before {
-  content: "\e950";
+.icon-youtube:before {
+  content: "\ea9d";
 }
-.icon-tv:before {
-  content: "\e95b";
+.icon-facebook2:before {
+  content: "\ea91";
 }
-.icon-fire:before {
-  content: "\e9a9";
+.icon-instagram:before {
+  content: "\ea92";
 }
-.icon-earth:before {
-  content: "\e9ca";
-}
-.icon-man:before {
-  content: "\e9dc";
-}
-.icon-grin:before {
-  content: "\e9e9";
-}
-.icon-baffled:before {
-  content: "\e9f3";
-}
-.icon-point-right:before {
-  content: "\ea04";
-}
-.icon-checkmark:before {
-  content: "\ea10";
-}
-.icon-enter:before {
-  content: "\ea13";
-}
-.icon-volume-high:before {
-  content: "\ea26";
-}
-.icon-tux:before {
-  content: "\eabd";
-}
-
-.icon-bubbles,
-.icon-github,
-.icon-facebook,
-.icon-soundcloud2 {
-  color: #fff;
-  font-size: 1.3em;
+.icon-twitter:before {
+  content: "\ea96";
 }

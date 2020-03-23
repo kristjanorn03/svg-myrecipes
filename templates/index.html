@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <title>My Recipes</title>
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
@@ -16,24 +17,45 @@
         </div>
         <nav class="topnav">
             <ul class="topmenu">
-                <li><a href="bread.html"><span class="icon-bread">Bread</span></a></li>
-                <li><a href="#"><span class="icon-starters"></span></a></li>
+                <li>
+                    <a class="anotherButton" href="bread.html"><span class="icon-bread"></span> Bread</a>
+                </li>
+                <li>
+                    <a class="anotherButton" href="#"><span class="icon-starters"></span> Starters</a>
+                </li>
+                <li>
+                    <a class="anotherButton" href="#"><span class="icon-mainCourse"></span> Main courses</a>
+                </li>
+                <li>
+                    <a class="anotherButton" href="#"><span class="icon-desserts"></span> Desserts</a>
+                </li>
+                <li>
+                    <a class="anotherButton" href="#"><span class="icon-drinks"></span> Drinks</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="col-3-1">
             <div class="splashlogo">
-                <img src="../img/my-recipes.svg" width=98% title="myrecies-logo">
+                <img class="image" src="../img/my-recipes.svg" alt="">
+            </div>
+            <div class="auglysing">
+                Í 5. verkefni verður gerð auglýsing og hún sett hér 
+            </div>
+            <div class="kynning">
+                <h2>
+                    Scalable Vector Graphics. Í 4. verkefni búum við til nýja forsíðu á uppskriftarvefinn og notum SVG tákn í lógó og leturtákn í efnisyfirliti.  Til að byrja með notum við vefsíðurnar úr 3. verkefni sem undirsíður og höfum aðra tengla í efnisyfirlitinu óvirka. 
+                </h2>
             </div>
         </section>
+        <div class="col-4">
+            <img class="imgs" src="../verkefni4-myndir/desserts-hero.jpg" title="Desserts">
+            <img class="imgs" src="../verkefni4-myndir/FigHamStarter.jpg" title="Starters">
+            <img class="imgs" src="../verkefni4-myndir/Grilled-Buttermilk-Chicken.jpg" title="Main courses">
+            <img class="imgs" src="../verkefni4-myndir/pide.jpg" title="Bread">
+        </div>
+        {% include "socialButts.html" %}
     </main>
-    {% include "header.html" %}
-    <div class="col-2">
-        <!--img class="image" src=image/logoForWeb.svg" alt=""-->
-        <h1>My Recipes</h1>
-    </div>
-    {% block content %} {% endblock %}
-
 </body>
 </html>
