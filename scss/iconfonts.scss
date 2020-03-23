@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?om5ezd');
-  src:  url('../fonts/icomoon.eot?om5ezd#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?om5ezd') format('truetype'),
-    url('../fonts/icomoon.woff?om5ezd') format('woff'),
-    url('../fonts/icomoon.svg?om5ezd#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?f4jrq');
+  src:  url('../fonts/icomoon.eot?f4jrq#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?f4jrq') format('truetype'),
+    url('../fonts/icomoon.woff?f4jrq') format('woff'),
+    url('../fonts/icomoon.svg?f4jrq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,8 +24,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-bread:before {
-  content: "\e904";
+
+.icon-drinks:before {
+  content: "\e900";
 }
 .icon-starters:before {
   content: "\e901";
@@ -36,14 +37,20 @@
 .icon-desserts:before {
   content: "\e903";
 }
-.icon-drinks:before {
-  content: "\e900";
+.icon-bread:before {
+  content: "\e904";
+}
+.icon-music:before {
+  content: "\e911";
 }
 .icon-play:before {
   content: "\e912";
 }
-.icon-youtube:before {
-  content: "\ea9d";
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-happy:before {
+  content: "\e9df";
 }
 .icon-facebook2:before {
   content: "\ea91";
@@ -53,4 +60,13 @@
 }
 .icon-twitter:before {
   content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-youtube2:before {
+  content: "\ea9e";
+}
+.icon-tumblr:before {
+  content: "\eab9";
 }
