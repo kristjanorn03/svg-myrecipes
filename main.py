@@ -29,10 +29,10 @@ tags = [post['tags'] for post in posts_metadata]
 bread_html = bread_template.render(posts=posts_metadata, tags=tags)
 
 #ekki output heldur upp úr vinnumöppunni og í recipes möppuna
-with open('../mydemo/index.html', 'w',encoding="utf-8") as file:
+with open('../seinnakvikun-myrecipes-output/index.html', 'w',encoding="utf-8") as file:
     file.write(index_html)
 
-with open('../mydemo/bread.html', 'w',encoding="utf-8") as file:
+with open('../seinnakvikun-myrecipes-output/bread.html', 'w',encoding="utf-8") as file:
     file.write(bread_html)
 
 for post in POSTS:
@@ -47,7 +47,7 @@ for post in POSTS:
 
     post_html = post_template.render(post=post_data)
 
-    post_file_path = '../mydemo/posts/{slug}.html'.format(slug=post_metadata['slug'])
+    post_file_path = '../seinnakvikun-myrecipes-output/posts/{slug}.html'.format(slug=post_metadata['slug'])
 
     os.makedirs(os.path.dirname(post_file_path), exist_ok=True)
     with open(post_file_path, 'w') as file:
